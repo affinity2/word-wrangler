@@ -5,9 +5,9 @@ with open('words.txt', 'r') as file:
 all_words = content.split()
 
 def get_new_chain():
-    word_chain = []
     start = all_words[randint(0, len(all_words) - 1)]
     temp = start
+    word_chain = []
     possible_words = []
     for i in range(35):
         used_words.append(temp)
